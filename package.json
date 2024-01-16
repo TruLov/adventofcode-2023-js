@@ -1,0 +1,39 @@
+{
+  "name": "aoc-2023-js",
+  "version": "1.0.0",
+  "description": "Advent of Code 2023 - JS",
+  "keywords": [
+    "aoc",
+    "advent of code"
+  ],
+  "author": "Tom Ruloff",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
+  "bin": {
+    "aoc": "index.js"
+  },
+  "scripts": {
+    "format": "npx prettier --write --ignore-unknown .",
+    "lint": "npx eslint --ext js --fix",
+    "link": "npm i -g",
+    "unlink": "npm r aoc-2023-js -g"
+  },
+  "dependencies": {
+    "@clinic/heap-profiler": "^5.0.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@datastructures-js/priority-queue": "^6.3.0",
+    "@graph-algorithm/minimum-cut": "^2.0.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.0.0",
+    "numeric": "^1.2.6",
+    "prettier": "^3.1.0",
+    "z3-solver": "^4.12.4"
+  }
+}

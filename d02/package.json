@@ -1,0 +1,16 @@
+{
+  "name": "d02",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "flames": "node --prof-process --preprocess -j isolate*.log | flamebearer",
+    "prof:1": "node --prof part1.js input.txt",
+    "prof:2": "node --prof part2.js input.txt",
+    "solve:1": "node part1.js input.txt",
+    "solve:2": "node part2.js input.txt",
+    "test:1": "node part1.js test.txt",
+    "test:2": "node part2.js test.txt"
+  },
+  "author": "Tom Ruloff",
+  "license": "MIT"
+}
